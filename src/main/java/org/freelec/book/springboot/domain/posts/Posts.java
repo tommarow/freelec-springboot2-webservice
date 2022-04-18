@@ -1,8 +1,6 @@
 package org.freelec.book.springboot.domain.posts;
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.freelec.book.springboot.domain.BaseTimeEntity;
 
 import javax.persistence.*;

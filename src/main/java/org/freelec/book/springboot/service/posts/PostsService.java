@@ -1,5 +1,7 @@
 package org.freelec.book.springboot.service.posts;
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import org.freelec.book.springboot.domain.posts.Posts;
 import org.freelec.book.springboot.domain.posts.PostsRepository;
