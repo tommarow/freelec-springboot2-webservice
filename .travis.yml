@@ -1,3 +1,5 @@
+# Travis CI 자동 실행 스크립트 생성
+
 language: java
 jdk:
   - openjdk11
