@@ -15,6 +15,8 @@ cache:
 
 before_install:
   - chmod +x gradlew
+  - openssl aes-256-cbc -K $encrypted_b846c1a3db1c_key -iv $encrypted_b846c1a3db1c_iv -in ./src/main/resources/application-oauth.properties.enc -out ./src/main/resources/application-oauth.properties -d
+  - openssl aes-256-cbc -K $encrypted_94b4040d7b45_key -iv $encrypted_94b4040d7b45_iv -in ./src/main/resources/application-real-db.properties.enc -out ./src/main/resources/application-real-db.properties -d
 
 script: "./gradlew clean build"
 

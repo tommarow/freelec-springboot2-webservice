@@ -1,5 +1,9 @@
 # 프로젝트 제외 경로
-/.gradle/
-/.idea/
+.gradle
+.idea
+build
+out
+
 application-oauth.properties
+application-real-db.properties
 application-google.properties
