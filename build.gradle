@@ -21,24 +21,33 @@ repositories {
     mavenCentral()
 }
 
+// for Junit 5
+test { // (2)
+    useJUnitPlatform()
+}
+
 dependencies {
     implementation('org.springframework.boot:spring-boot-starter-web')
+    implementation('org.springframework.boot:spring-boot-starter-mustache')
+
     implementation('org.projectlombok:lombok')
     annotationProcessor('org.projectlombok:lombok')
-    implementation('junit:junit:4.13.1')
+    testImplementation('org.projectlombok:lombok')
+    testAnnotationProcessor('org.projectlombok:lombok')
+
+//    implementation('junit:junit:4.13.1')
 
     implementation('org.springframework.boot:spring-boot-starter-data-jpa')
-    implementation('org.springframework.boot:spring-boot-starter-mustache')
+    implementation('org.mariadb.jdbc:mariadb-java-client')
     implementation('com.h2database:h2')
 
     implementation('org.springframework.boot:spring-boot-starter-oauth2-client')
     implementation('org.springframework.session:spring-session-jdbc')
 
-    implementation('org.mariadb.jdbc:mariadb-java-client')
-
-
     testImplementation('org.springframework.boot:spring-boot-starter-test')
-    testAnnotationProcessor('org.projectlombok:lombok')
+    testImplementation("org.springframework.security:spring-security-test")
+
+
 
 //    testImplementation('org.springframework.boot:spring-boot-starter-data-jpa')
 //    testImplementation('org.springframework.boot:spring-boot-starter-oauth2-client')
@@ -47,7 +56,7 @@ dependencies {
 
 //    testImplementation('com.h2database:h2')
 
-    testImplementation("org.springframework.security:spring-security-test")
+
 
 }
 
