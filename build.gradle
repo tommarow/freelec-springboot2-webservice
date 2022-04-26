@@ -40,10 +40,12 @@ dependencies {
     testImplementation('org.springframework.boot:spring-boot-starter-test')
     testAnnotationProcessor('org.projectlombok:lombok')
 
-    testImplementation('org.springframework.boot:spring-boot-starter-data-jpa')
-    testImplementation('org.springframework.boot:spring-boot-starter-oauth2-client')
-    testImplementation('org.springframework.session:spring-session-jdbc')
-    testImplementation('org.mariadb.jdbc:mariadb-java-client')
+//    testImplementation('org.springframework.boot:spring-boot-starter-data-jpa')
+//    testImplementation('org.springframework.boot:spring-boot-starter-oauth2-client')
+//    testImplementation('org.springframework.session:spring-session-jdbc')
+//    testImplementation('org.mariadb.jdbc:mariadb-java-client')
+
+//    testImplementation('com.h2database:h2')
 
     testImplementation("org.springframework.security:spring-security-test")
 
