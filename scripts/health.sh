@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 ABSPATH=$(readlink -f $0)
 ABSDIR=$(dirname $ABSPATH) # 현재 stop.sh가 속해있는 경로를 찾음, profile.sh의 경로를 찾기 위해 사용됨.
@@ -26,7 +26,6 @@ do
   else
     echo "> Health check의 응답을 알 수 없거나 혹은 실행 상태가 아닙니다."
     echo "> Health check: ${RESPONSE}"
-    exit 1
   fi
 
   if [ ${RETRY_COUNT} -eq 10 ]
