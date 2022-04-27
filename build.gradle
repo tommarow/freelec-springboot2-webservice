@@ -14,7 +14,10 @@ apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
 group 'org.freelec.book'
-version '1.0.1-SNAPSHOT'
+// 10.4장 수정
+// 기존 version '1.0.1-SNAPSHOT' 변경함
+// build.gradle은 Groovy 기반 빌드 툴이므로 해당 문법 사용 가능
+version '1.0.1-SNAPSHOT-'+new Date().format("yyyyMMddHHmmss")
 sourceCompatibility = 11
 
 repositories {
